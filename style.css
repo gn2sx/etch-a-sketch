@@ -1,10 +1,20 @@
 #container{
-
+  height:530px;
+  width:530px;
+  margin:auto;
 }
 .square{
-  height:20px;
-  width:20px;
+  height:31px;
+  width:31px;
   border:1px dashed black;
   display:inline-block;
   margin-top:-5px;
+  clear:both;
+}
+#clear{
+  background-color:teal;
+  color:yellow;
+  font-family:sans-serif;
+  display:inline-block;
+  margin:10px;
 }
