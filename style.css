@@ -1,15 +1,22 @@
+body{
+  background-color:#f7e4a8;
+}
 #container{
   height:530px;
   width:530px;
   margin:auto;
 }
 #grid{
-  border:1px solid black;
+  border:3px solid #2f3a26;
   border-collapse:collapse;
   border-spacing:0px;
+  background-color:white;
 }
 .grid-row{
 
+}
+#header{
+  text-align:center;
 }
 .square{
   height:31px;
