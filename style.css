@@ -4,7 +4,9 @@
   margin:auto;
 }
 #grid{
-  border:1px dashed black;
+  border:1px solid black;
+  border-collapse:collapse;
+  border-spacing:0px;
 }
 .grid-row{
 
@@ -12,20 +14,35 @@
 .square{
   height:31px;
   width:31px;
-/*  border:1px dashed black;*/
+  border:0px;
 /*  display:inline-block;*/
 /*  margin-top:-5px;*/
 /*  clear:both;*/
-  border:1px dashed black;
 }
 #clear{
+
+}
+#rainbow{
+
+}
+#eraser{
+
+}
+td{
+  padding:0px;
+  border:0px;
+}
+.button{
   background-color:teal;
   color:yellow;
   font-family:sans-serif;
   display:inline-block;
-  margin:10px;
+  margin-top:10px;
+  margin-left:65px;
+  padding:5px;
 }
-th, td{
-  padding:0px;
-  border:0px;
+#button-container{
+  display:block;
+  width:500px;
+  margin:auto;
 }
