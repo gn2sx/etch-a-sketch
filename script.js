@@ -1,17 +1,16 @@
 function drawGrid(size){
-  $('#container').empty();
+  $('#grid').empty();
   //Set square dimensions to fit inside container, rounding down
   var squareSize=Math.floor(500/size);
   console.log(squareSize);
-  $('.square').css('height',squareSize+"px");
-  console.log($('.square'));
-  $('.square').css('width',squareSize+"px");
   for(row=1;row<=size;row++){ //drawing the grid
-    for(column=1;column<=size;column++){
-      $('#container').append('<div class="square"></div>');
+      $('#grid').append('<tr class="grid-row"></tr>');
     }
-    $('#container').append('<br>');
+  for(column=1;column<=size;column++){
+    $('.grid-row').append('<td><div class="square"></div></td>')
   }
+  $('.square').css('height',squareSize+"px");
+  $('.square').css('width',squareSize+"px");
 }
 $(document).ready(function(){
   drawGrid(16);
